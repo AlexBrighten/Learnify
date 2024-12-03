@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="max-w-[988px] mx-auto flex-1 w-full flex flex-col lg:flex-row items-center justify-center p-4 gap-2">
       {/* Image Section */}
-      <div className="relative w-[240px] h-[240px] lg:w-[424px] lg:h-[424px] mb-8 lg:m-0">
+      {/* <div className="relative w-[240px] h-[240px] lg:w-[424px] lg:h-[424px] mb-8 lg:m-0">
         <Image src="/next.svg" alt="Hero" width={424} height={424} />
-      </div>
+      </div> */}
 
       {/* Header Section */}
       <div className="flex flex-col items-center gap-y-8">
