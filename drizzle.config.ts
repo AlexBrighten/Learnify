@@ -1,11 +1,9 @@
-import 'dotenv/config';
-import type { Config } from 'drizzle-kit';
+import { defineConfig } from "drizzle-kit";
 
-export default {
-  schema: './db/schema.tsx',
-  out: './db/drizzle.tsx',
-  driver: 'pg',
+export default defineConfig({
+  dialect: "postgresql",
+  schema: "db/schema.ts",
   dbCredentials: {
-    connectionString: process.env.DATABASE_URL!,
+    url: "postgresql://neondb_owner:KDMJcru0lg4S@ep-hidden-snowflake-a57w3s9j.us-east-2.aws.neon.tech/learnify?sslmode=require",
   },
-} satisfies Config;
+});
